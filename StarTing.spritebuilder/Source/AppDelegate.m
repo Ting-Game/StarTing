@@ -27,11 +27,17 @@
 
 #import "AppDelegate.h"
 #import "CCBuilderReader.h"
+#import <Parse/Parse.h>
 
 @implementation AppController
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    // Parse
+    [Parse setApplicationId:@"xpwNQjDebVje8jPZMVM4OZgJOD4ALNhW7H79O4tR"
+                  clientKey:@"J42I7tWLi0qq9pUFvA1lnJ1lepvHgpDiNTqlOI6L"];
+    [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+    
     // Configure Cocos2d with the options set in SpriteBuilder
     NSString* configPath = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"Published-iOS"]; // TODO: add support for Published-Android support
     configPath = [configPath stringByAppendingPathComponent:@"configCocos2d.plist"];

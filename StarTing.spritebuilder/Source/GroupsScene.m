@@ -7,12 +7,31 @@
 //
 
 #import "GroupsScene.h"
+#import <Parse/Parse.h>
 
 @implementation GroupsScene
 
-- (void)CreateGroups_Button {
-    CCScene *FriendsScene = [CCBReader loadAsScene:@"FriendsScene"];
-    [self addChild:FriendsScene];
+- (void)didLoadFromCCB {
+    //
+    NSArray *friends_list;
+    [PFCloud callFunctionInBackground:@"getGroups"
+                       withParameters:@{}
+                                block:^(NSArray *success, NSError *error) {
+                                    if (!error) {
+                                        NSLog(@"%@", success[0]);
+                                        // Push sent successfully
+                                    }
+                                }];
 }
+
+- (void)CreateGroups_Button {
+    [PFCloud callFunctionInBackground:@"createGroup"
+                       withParameters:@{}
+                                block:^(NSString *success, NSError *error) {
+                                    if (!error) {
+                                        NSLog(@"%@", success);
+                                        // Push sent successfully
+                                    }
+                                }];}
 
 @end

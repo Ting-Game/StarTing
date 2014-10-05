@@ -7,11 +7,27 @@
 //
 
 #import "MainScene.h"
+#import <Parse/Parse.h>
 
 @implementation MainScene
 
 - (void)didLoadFromCCB {
     [self Friends_Button];
+    [PFUser logInWithUsernameInBackground:@"Fred" password:@"123"
+                                    block:^(PFUser *user, NSError *error) {
+                                        if (user) {
+                                            // Do stuff after successful login.
+                                            NSLog(@"Log in successfully!");
+                                        } else {
+                                            // The login failed. Check error to see why.
+                                        }
+                                    }];
+    PFUser *currentUser = [PFUser currentUser];
+    if (currentUser) {
+        // do stuff with the user
+    } else {
+        // show the signup or login screen
+    }
 }
 
 - (void)Friends_Button {
