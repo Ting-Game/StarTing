@@ -9,29 +9,54 @@
 #import "GroupsScene.h"
 #import <Parse/Parse.h>
 
-@implementation GroupsScene
+@implementation GroupsScene{
+    CCLabelTTF *nogroups_hint;
+    CCScrollView *groups_scroll;
+    NSMutableArray *grouplist;
+}
 
 - (void)didLoadFromCCB {
-    //
-    NSArray *friends_list;
+    // pull friends list from Parse
     [PFCloud callFunctionInBackground:@"getGroups"
                        withParameters:@{}
                                 block:^(NSArray *success, NSError *error) {
                                     if (!error) {
-                                        NSLog(@"%@", success[0]);
-                                        // Push sent successfully
+                                        if (success != NULL) {
+                                            if (success.count > 0) {
+                                                nogroups_hint.string = @"";
+                                                for (int i = 0; i < success.count; i++) {
+                                                    PFObject *each_object = success[i];
+                                                    NSString *each_object_groupname = each_object[@"name"];
+                                                    
+                                                    CCLabelTTF *label = [CCLabelTTF node];
+                                                    //label.fontName = @"Sansation-BoldItalic.ttf";
+                                                    label.fontSize = 15.f;
+                                                    label.string = [NSString stringWithFormat:@"%@",each_object_groupname];
+                                                    label.anchorPoint = CGPointMake(0, 0);
+                                                    //label.positionType = CCPositionTypeNormalized;
+                                                    label.position = CGPointMake(100, 35 + i * (label.contentSizeInPoints.height + 2));
+                                                    label.color = [CCColor colorWithRed:0.f green:0.f blue:0.f];
+                                                    label.positionType = CCPositionTypeMake(CCPositionTypePoints.xUnit, CCPositionTypePoints.yUnit, CCPositionReferenceCornerTopLeft);
+                                                    [[groups_scroll contentNode] addChild:label];
+
+                                                }
+                                            }
+                                            else {
+                                                nogroups_hint.string = @"Please create group";
+                                            }
+                                        }
                                     }
                                 }];
 }
 
 - (void)CreateGroups_Button {
-    [PFCloud callFunctionInBackground:@"createGroup"
-                       withParameters:@{}
-                                block:^(NSString *success, NSError *error) {
-                                    if (!error) {
-                                        NSLog(@"%@", success);
-                                        // Push sent successfully
-                                    }
-                                }];}
+    CCScene *CreateGroupScene = [CCBReader loadAsScene:@"CreateGroupScene"];
+    [self addChild:CreateGroupScene];
+}
+
+- (void)Backto_GroupsScene_Button{
+    CCScene *MainScene = [CCBReader loadAsScene:@"MainScene"];
+    [[CCDirector sharedDirector] replaceScene:MainScene];
+}
 
 @end

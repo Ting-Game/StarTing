@@ -65,7 +65,16 @@
 
 - (CCScene*) startScene
 {
-    return [CCBReader loadAsScene:@"MainScene"];
+    PFUser *currentUser = [PFUser currentUser];
+    [PFUser logOut];
+    
+    if (currentUser) {
+         //do stuff with the user
+        return [CCBReader loadAsScene:@"MainScene"];
+    } else {
+         //show the signup or login screen
+        return [CCBReader loadAsScene:@"RegisterScene"];
+    }
 }
 
 @end

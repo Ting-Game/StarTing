@@ -9,45 +9,41 @@
 #import "MainScene.h"
 #import <Parse/Parse.h>
 
-@implementation MainScene
+@implementation MainScene{
+    CCScene *currentScene;
+}
 
 - (void)didLoadFromCCB {
-    [self Friends_Button];
-    [PFUser logInWithUsernameInBackground:@"Fred" password:@"123"
-                                    block:^(PFUser *user, NSError *error) {
-                                        if (user) {
-                                            // Do stuff after successful login.
-                                            NSLog(@"Log in successfully!");
-                                        } else {
-                                            // The login failed. Check error to see why.
-                                        }
-                                    }];
-    PFUser *currentUser = [PFUser currentUser];
-    if (currentUser) {
-        // do stuff with the user
-    } else {
-        // show the signup or login screen
-    }
+    currentScene = [CCBReader loadAsScene:@"FriendsScene"];
+    [self addChild:currentScene];
 }
 
 - (void)Friends_Button {
+    [self removeChild:currentScene];
     CCScene *FriendsScene = [CCBReader loadAsScene:@"FriendsScene"];
     [self addChild:FriendsScene];
+    currentScene = FriendsScene;
 }
 
 - (void)Groups_Button {
+    [self removeChild:currentScene];
     CCScene *GroupsScene = [CCBReader loadAsScene:@"GroupsScene"];
     [self addChild:GroupsScene];
+    currentScene = GroupsScene;
 }
 
 - (void)Games_Button {
+    [self removeChild:currentScene];
     CCScene *GamesScene = [CCBReader loadAsScene:@"GamesScene"];
     [self addChild:GamesScene];
+    currentScene = GamesScene;
 }
 
 - (void)Settings_Button {
+    [self removeChild:currentScene];
     CCScene *SettingsScene = [CCBReader loadAsScene:@"SettingsScene"];
     [self addChild:SettingsScene];
+    currentScene = SettingsScene;
 }
 
 @end

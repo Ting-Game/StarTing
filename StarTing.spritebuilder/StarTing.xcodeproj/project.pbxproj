@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		602FA2CA19E72E8400E03FC5 /* RegisterScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 602FA2C919E72E8400E03FC5 /* RegisterScene.m */; };
+		60D9891219E74D83003D4056 /* AddFriendScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 60D9891119E74D83003D4056 /* AddFriendScene.m */; };
+		60D9891619E7709D003D4056 /* CreateGroupScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 60D9891519E7709D003D4056 /* CreateGroupScene.m */; };
 		60F518C319E0633600B2536B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 60F518B819E0633600B2536B /* AppDelegate.m */; };
 		60F518C419E0633600B2536B /* FriendsScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 60F518BA19E0633600B2536B /* FriendsScene.m */; };
 		60F518C519E0633600B2536B /* GamesScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 60F518BC19E0633600B2536B /* GamesScene.m */; };
@@ -71,6 +74,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		602FA2C819E72E8400E03FC5 /* RegisterScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RegisterScene.h; path = Source/RegisterScene.h; sourceTree = "<group>"; };
+		602FA2C919E72E8400E03FC5 /* RegisterScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RegisterScene.m; path = Source/RegisterScene.m; sourceTree = "<group>"; };
+		60D9891019E74D83003D4056 /* AddFriendScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddFriendScene.h; path = Source/AddFriendScene.h; sourceTree = "<group>"; };
+		60D9891119E74D83003D4056 /* AddFriendScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddFriendScene.m; path = Source/AddFriendScene.m; sourceTree = "<group>"; };
+		60D9891419E7709D003D4056 /* CreateGroupScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CreateGroupScene.h; path = Source/CreateGroupScene.h; sourceTree = "<group>"; };
+		60D9891519E7709D003D4056 /* CreateGroupScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CreateGroupScene.m; path = Source/CreateGroupScene.m; sourceTree = "<group>"; };
 		60F518B719E0633600B2536B /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Source/AppDelegate.h; sourceTree = "<group>"; };
 		60F518B819E0633600B2536B /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Source/AppDelegate.m; sourceTree = "<group>"; };
 		60F518B919E0633600B2536B /* FriendsScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FriendsScene.h; path = Source/FriendsScene.h; sourceTree = "<group>"; };
@@ -177,14 +186,20 @@
 				60F518B819E0633600B2536B /* AppDelegate.m */,
 				60F518B919E0633600B2536B /* FriendsScene.h */,
 				60F518BA19E0633600B2536B /* FriendsScene.m */,
+				60D9891019E74D83003D4056 /* AddFriendScene.h */,
+				60D9891119E74D83003D4056 /* AddFriendScene.m */,
 				60F518BB19E0633600B2536B /* GamesScene.h */,
 				60F518BC19E0633600B2536B /* GamesScene.m */,
 				60F518BD19E0633600B2536B /* GroupsScene.h */,
 				60F518BE19E0633600B2536B /* GroupsScene.m */,
+				60D9891419E7709D003D4056 /* CreateGroupScene.h */,
+				60D9891519E7709D003D4056 /* CreateGroupScene.m */,
 				60F518BF19E0633600B2536B /* MainScene.h */,
 				60F518C019E0633600B2536B /* MainScene.m */,
 				60F518C119E0633600B2536B /* SettingsScene.h */,
 				60F518C219E0633600B2536B /* SettingsScene.m */,
+				602FA2C819E72E8400E03FC5 /* RegisterScene.h */,
+				602FA2C919E72E8400E03FC5 /* RegisterScene.m */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -415,10 +430,13 @@
 			files = (
 				60F518C319E0633600B2536B /* AppDelegate.m in Sources */,
 				B73789871807631A0076A88C /* main.m in Sources */,
+				60D9891619E7709D003D4056 /* CreateGroupScene.m in Sources */,
 				60F518C519E0633600B2536B /* GamesScene.m in Sources */,
+				602FA2CA19E72E8400E03FC5 /* RegisterScene.m in Sources */,
 				60F518C419E0633600B2536B /* FriendsScene.m in Sources */,
 				60F518C819E0633600B2536B /* SettingsScene.m in Sources */,
 				60F518C619E0633600B2536B /* GroupsScene.m in Sources */,
+				60D9891219E74D83003D4056 /* AddFriendScene.m in Sources */,
 				60F518C719E0633600B2536B /* MainScene.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

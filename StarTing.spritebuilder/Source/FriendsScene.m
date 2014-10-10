@@ -9,52 +9,56 @@
 #import "FriendsScene.h"
 #import <Parse/Parse.h>
 
-@implementation FriendsScene
+@implementation FriendsScene{
+    CCTextField *PopAddFriend_Field;
+    CCScrollView *friends_scroll;
+    CCLabelTTF *nofriend_hint;
+}
+
 
 - (void)didLoadFromCCB {
-    //
-    NSArray *friends_list;
+    // pull friends list from Parse
     [PFCloud callFunctionInBackground:@"getFriends"
                        withParameters:@{}
                                 block:^(NSArray *success, NSError *error) {
                                     if (!error) {
-                                        NSLog(@"%@", success[2]);
-                                        // Push sent successfully
+                                        if (success != NULL) {
+                                            if (success.count > 0) {
+                                                nofriend_hint.string = @"";
+                                                float y = 35;
+                                                for (int i=0; i < success.count; i++)
+                                                {
+                                                    NSString *friendName = success[i];
+                                                    
+                                                    CCLabelTTF *label = [CCLabelTTF node];
+                                                    //label.fontName = @"Sansation-BoldItalic.ttf";
+                                                    label.fontSize = 15.f;
+                                                    label.string = [NSString stringWithFormat:@"%@",friendName];
+                                                    label.anchorPoint = CGPointMake(0, 0);
+                                                    //label.positionType = CCPositionTypeNormalized;
+                                                    label.position = CGPointMake(120, y);
+                                                    label.color = [CCColor colorWithRed:0.f green:0.f blue:0.f];
+                                                    label.positionType = CCPositionTypeMake(CCPositionTypePoints.xUnit, CCPositionTypePoints.yUnit, CCPositionReferenceCornerTopLeft);
+                                                    [[friends_scroll contentNode] addChild:label];
+                                                    y+=label.contentSizeInPoints.height + 2;
+                                                }
+                                            }
+                                            else {
+                                                nofriend_hint.string = @"Please add friends";
+                                            }
+                                        }
                                     }
                                 }];
 }
 
 - (void)AddFriends_Button {
-    
-//    PFUser *user = [PFUser user];
-//    user.username = @"Fred";
-//    user.password = @"123";
-//    user.email = @"email@example.com";
-//    
-//    // other fields can be set if you want to save more information
-//    user[@"phone"] = @"650-555-0000";
-//    
-//    [user signUpInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
-//        if (!error) {
-//            // Hooray! Let them use the app now.
-//        } else {
-//            NSString *errorString = [error userInfo][@"error"];
-//            // Show the errorString somewhere and let the user try again.
-//        }
-//    }];
-//    
-//    PFObject *testObject = [PFObject objectWithClassName:@"TestObject"];
-//    testObject[@"foo"] = @"bar";
-//    [testObject saveInBackground];
-    [PFCloud callFunctionInBackground:@"addFriend"
-                       withParameters:@{@"friendUsername": @"raulpitz"}
-                                block:^(NSString *success, NSError *error) {
-                                    if (!error) {
-                                        //NSLog(@"%@", success);
-                                        // Push sent successfully
-                                    }
-                                }];
+    CCScene *AddFriendScene = [CCBReader loadAsScene:@"AddFriendScene"];
+    [self addChild:AddFriendScene];
+}
 
+- (void)refreshScene{
+    CCScene *FriendsScene = [CCBReader loadAsScene:@"FriendsScene"];
+    [[CCDirector sharedDirector] replaceScene:FriendsScene];
 }
 
 @end
