@@ -28,4 +28,9 @@
 
 }
 
+- (void)Backto_GroupsScene_Button{
+    CCScene *GroupsScene = [CCBReader loadAsScene:@"GroupsScene"];
+    [[CCDirector sharedDirector] replaceScene:GroupsScene];
+}
+
 @end

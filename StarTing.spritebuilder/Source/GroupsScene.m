@@ -7,6 +7,7 @@
 //
 
 #import "GroupsScene.h"
+#import "EachGroupListnode.h"
 #import <Parse/Parse.h>
 
 @implementation GroupsScene{
@@ -27,17 +28,28 @@
                                                 for (int i = 0; i < success.count; i++) {
                                                     PFObject *each_object = success[i];
                                                     NSString *each_object_groupname = each_object[@"name"];
+                                                    NSString *each_object_groupid = each_object.objectId;
                                                     
-                                                    CCLabelTTF *label = [CCLabelTTF node];
+//                                                    CCLabelTTF *label = [CCLabelTTF node];
+//                                                    //label.fontName = @"Sansation-BoldItalic.ttf";
+//                                                    label.fontSize = 15.f;
+//                                                    label.string = [NSString stringWithFormat:@"%@",each_object_groupname];
+//                                                    label.anchorPoint = CGPointMake(0, 0);
+//                                                    //label.positionType = CCPositionTypeNormalized;
+//                                                    label.position = CGPointMake(100, 35 + i * (label.contentSizeInPoints.height + 2));
+//                                                    label.color = [CCColor colorWithRed:0.f green:0.f blue:0.f];
+//                                                    label.positionType = CCPositionTypeMake(CCPositionTypePoints.xUnit, CCPositionTypePoints.yUnit, CCPositionReferenceCornerTopLeft);
+//                                                    [[groups_scroll contentNode] addChild:label];
+                                                    
+                                                    EachGroupListnode *eachGroupListnode = (EachGroupListnode*)[CCBReader load:@"EachGroupListnode"];
+                                                    eachGroupListnode.ListNode_Name = each_object_groupname;
+                                                    eachGroupListnode.ListNode_Groupid= each_object_groupid;
                                                     //label.fontName = @"Sansation-BoldItalic.ttf";
-                                                    label.fontSize = 15.f;
-                                                    label.string = [NSString stringWithFormat:@"%@",each_object_groupname];
-                                                    label.anchorPoint = CGPointMake(0, 0);
-                                                    //label.positionType = CCPositionTypeNormalized;
-                                                    label.position = CGPointMake(100, 35 + i * (label.contentSizeInPoints.height + 2));
-                                                    label.color = [CCColor colorWithRed:0.f green:0.f blue:0.f];
-                                                    label.positionType = CCPositionTypeMake(CCPositionTypePoints.xUnit, CCPositionTypePoints.yUnit, CCPositionReferenceCornerTopLeft);
-                                                    [[groups_scroll contentNode] addChild:label];
+                                                    eachGroupListnode.anchorPoint = CGPointMake(0, 0);
+                                                    eachGroupListnode.position = CGPointMake(0, 50 + i * (eachGroupListnode.contentSizeInPoints.height));
+                                                    eachGroupListnode.positionType = CCPositionTypeMake(CCPositionTypePoints.xUnit, CCPositionTypePoints.yUnit, CCPositionReferenceCornerTopLeft);
+                                                    [[groups_scroll contentNode] addChild:eachGroupListnode];
+
 
                                                 }
                                             }
@@ -51,12 +63,27 @@
 
 - (void)CreateGroups_Button {
     CCScene *CreateGroupScene = [CCBReader loadAsScene:@"CreateGroupScene"];
-    [self addChild:CreateGroupScene];
+    [[CCDirector sharedDirector] replaceScene:CreateGroupScene];
 }
 
-- (void)Backto_GroupsScene_Button{
-    CCScene *MainScene = [CCBReader loadAsScene:@"MainScene"];
-    [[CCDirector sharedDirector] replaceScene:MainScene];
+- (void)Friends_Button {
+    CCScene *FriendsScene = [CCBReader loadAsScene:@"FriendsScene"];
+    [[CCDirector sharedDirector] replaceScene:FriendsScene];
+}
+
+- (void)Groups_Button {
+    CCScene *GroupsScene = [CCBReader loadAsScene:@"GroupsScene"];
+    [[CCDirector sharedDirector] replaceScene:GroupsScene];
+}
+
+- (void)Games_Button {
+    CCScene *GamesScene = [CCBReader loadAsScene:@"GamesScene"];
+    [[CCDirector sharedDirector] replaceScene:GamesScene];
+}
+
+- (void)Settings_Button {
+    CCScene *SettingsScene = [CCBReader loadAsScene:@"SettingsScene"];
+    [[CCDirector sharedDirector] replaceScene:SettingsScene];
 }
 
 @end
