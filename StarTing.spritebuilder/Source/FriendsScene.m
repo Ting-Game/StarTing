@@ -75,4 +75,17 @@
     [[CCDirector sharedDirector] replaceScene:AddFriendScene];
 }
 
+//- (void)DeleteFriends_Button {
+//    [PFCloud callFunctionInBackground:@"deleteFriend"
+//                       withParameters:@{@"friendUsername" : self.Group_Id}
+//                                block:^(PFObject *success, NSError *error) {
+//                                    if (!error) {
+//                                        
+//                                    }
+//                                    else {
+//                                        
+//                                    }
+//                                }];
+//}
+
 @end

@@ -24,6 +24,7 @@
     eachGroupScene.Display_Group_Name = self.ListNode_Name;
     eachGroupScene.Group_Id = self.ListNode_Groupid;
     [self.parent.parent.parent addChild:eachGroupScene];
+    [self.parent removeFromParent];
     //[[CCDirector sharedDirector] replaceScene:eachGroupScene];
 }
 

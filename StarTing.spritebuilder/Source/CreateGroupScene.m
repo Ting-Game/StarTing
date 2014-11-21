@@ -21,8 +21,8 @@
                                 block:^(NSArray *success, NSError *error) {
                                     if (!error) {
                                         [self removeFromParent];
-                                        CCScene *MainScene = [CCBReader loadAsScene:@"MainScene"];
-                                        [[CCDirector sharedDirector] replaceScene:MainScene];
+                                        CCScene *GroupsScene = [CCBReader loadAsScene:@"GroupsScene"];
+                                        [[CCDirector sharedDirector] replaceScene:GroupsScene];
                                     }
                                 }];
 
