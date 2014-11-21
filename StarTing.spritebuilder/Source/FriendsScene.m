@@ -15,7 +15,6 @@
     CCLabelTTF *nofriend_hint;
 }
 
-
 - (void)didLoadFromCCB {
     // pull friends list from Parse
     [PFCloud callFunctionInBackground:@"getFriends"
@@ -51,14 +50,42 @@
                                 }];
 }
 
-- (void)AddFriends_Button {
-    CCScene *AddFriendScene = [CCBReader loadAsScene:@"AddFriendScene"];
-    [self addChild:AddFriendScene];
-}
-
-- (void)refreshScene{
+- (void)Friends_Button {
     CCScene *FriendsScene = [CCBReader loadAsScene:@"FriendsScene"];
     [[CCDirector sharedDirector] replaceScene:FriendsScene];
 }
+
+- (void)Groups_Button {
+    CCScene *GroupsScene = [CCBReader loadAsScene:@"GroupsScene"];
+    [[CCDirector sharedDirector] replaceScene:GroupsScene];
+}
+
+- (void)Games_Button {
+    CCScene *GamesScene = [CCBReader loadAsScene:@"GamesScene"];
+    [[CCDirector sharedDirector] replaceScene:GamesScene];
+}
+
+- (void)Settings_Button {
+    CCScene *SettingsScene = [CCBReader loadAsScene:@"SettingsScene"];
+    [[CCDirector sharedDirector] replaceScene:SettingsScene];
+}
+
+- (void)AddFriends_Button {
+    CCScene *AddFriendScene = [CCBReader loadAsScene:@"AddFriendScene"];
+    [[CCDirector sharedDirector] replaceScene:AddFriendScene];
+}
+
+//- (void)DeleteFriends_Button {
+//    [PFCloud callFunctionInBackground:@"deleteFriend"
+//                       withParameters:@{@"friendUsername" : self.Group_Id}
+//                                block:^(PFObject *success, NSError *error) {
+//                                    if (!error) {
+//                                        
+//                                    }
+//                                    else {
+//                                        
+//                                    }
+//                                }];
+//}
 
 @end

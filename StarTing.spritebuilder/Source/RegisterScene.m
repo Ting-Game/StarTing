@@ -34,17 +34,9 @@
     
     [user signUpInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
         if (!error) {
-            // log in immediately
-            [PFUser logInWithUsernameInBackground:UserName password:Password
-                                            block:^(PFUser *user, NSError *error) {
-                                                if (user) {
-                                                    // Do stuff after successful login.
-                                                } else {
-                                                    // The login failed. Check error to see why.
-                                                }
-                                            }];
-            CCScene *MainScene = [CCBReader loadAsScene:@"MainScene"];
-            [[CCDirector sharedDirector] replaceScene:MainScene];
+            // jump to log in scene
+            CCScene *LoginScene = [CCBReader loadAsScene:@"LoginScene"];
+            [[CCDirector sharedDirector] replaceScene:LoginScene];
         } else {
             // Show the errorString and let the user try again.
             NSString *errorString = [error userInfo][@"error"];
@@ -53,4 +45,8 @@
     }];
 }
 
+- (void)Back_To_Login_Button{
+    CCScene *LoginScene = [CCBReader loadAsScene:@"LoginScene"];
+    [[CCDirector sharedDirector] replaceScene:LoginScene];
+}
 @end

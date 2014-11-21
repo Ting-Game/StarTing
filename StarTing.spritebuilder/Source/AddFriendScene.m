@@ -22,8 +22,8 @@
                                 block:^(NSArray *success, NSError *error) {
                                     if (!error) {
                                         [self removeFromParent];
-                                        CCScene *MainScene = [CCBReader loadAsScene:@"MainScene"];
-                                        [[CCDirector sharedDirector] replaceScene:MainScene];
+                                        CCScene *FriendsScene = [CCBReader loadAsScene:@"FriendsScene"];
+                                        [[CCDirector sharedDirector] replaceScene:FriendsScene];
                                     }else {
                                         NSString *errorString = [error userInfo][@"error"];
                                         nouser_hint.string = errorString;
@@ -32,7 +32,7 @@
 }
 
 - (void) Backto_FriendsScene_Button{
-    CCScene *MainScene = [CCBReader loadAsScene:@"MainScene"];
-    [[CCDirector sharedDirector] replaceScene:MainScene];
+    CCScene *FriendsScene = [CCBReader loadAsScene:@"FriendsScene"];
+    [[CCDirector sharedDirector] replaceScene:FriendsScene];
 }
 @end

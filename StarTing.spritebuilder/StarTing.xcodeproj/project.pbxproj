@@ -8,6 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		602FA2CA19E72E8400E03FC5 /* RegisterScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 602FA2C919E72E8400E03FC5 /* RegisterScene.m */; };
+		604DFDD41A1ECBEF00A3A255 /* RedCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 604DFDD31A1ECBEF00A3A255 /* RedCard.m */; };
+		604DFDDB1A1ECC2E00A3A255 /* GreenCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 604DFDDA1A1ECC2E00A3A255 /* GreenCard.m */; };
+		604DFDEA1A1EDE8C00A3A255 /* WinnerScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 604DFDE91A1EDE8C00A3A255 /* WinnerScene.m */; };
+		605CBDC719FAE6D900005D79 /* EachGroupAddMemberScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 605CBDC619FAE6D900005D79 /* EachGroupAddMemberScene.m */; };
+		605CBDCE19FAF74B00005D79 /* AddGroupMemberListnode.m in Sources */ = {isa = PBXBuildFile; fileRef = 605CBDCD19FAF74B00005D79 /* AddGroupMemberListnode.m */; };
+		6077F75919F1B43C00C32CAE /* EachGroupScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 6077F75819F1B43C00C32CAE /* EachGroupScene.m */; };
+		6077F75E19F1B7EB00C32CAE /* EachGroupListnode.m in Sources */ = {isa = PBXBuildFile; fileRef = 6077F75D19F1B7EB00C32CAE /* EachGroupListnode.m */; };
+		6077F76119F1DC7200C32CAE /* LoginScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 6077F76019F1DC7200C32CAE /* LoginScene.m */; };
+		60A24ACD1A195A19001A19DF /* SelectGameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 60A24ACC1A195A19001A19DF /* SelectGameScene.m */; };
+		60A24ADA1A195CEF001A19DF /* GameNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 60A24AD91A195CEF001A19DF /* GameNode.m */; };
+		60A24ADD1A195EF2001A19DF /* EachGameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 60A24ADC1A195EF2001A19DF /* EachGameScene.m */; };
+		60A24AE01A19651E001A19DF /* GameGroupScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 60A24ADF1A19651E001A19DF /* GameGroupScene.m */; };
+		60A24AE31A1965FF001A19DF /* GroupNodeForGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 60A24AE21A1965FF001A19DF /* GroupNodeForGame.m */; };
+		60A24AE61A19702E001A19DF /* CurrentGameNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 60A24AE51A19702E001A19DF /* CurrentGameNode.m */; };
+		60A24AE91A1981A3001A19DF /* CardNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 60A24AE81A1981A3001A19DF /* CardNode.m */; };
 		60D9891219E74D83003D4056 /* AddFriendScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 60D9891119E74D83003D4056 /* AddFriendScene.m */; };
 		60D9891619E7709D003D4056 /* CreateGroupScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 60D9891519E7709D003D4056 /* CreateGroupScene.m */; };
 		60F518C319E0633600B2536B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 60F518B819E0633600B2536B /* AppDelegate.m */; };
@@ -57,6 +72,27 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		60A24AD21A195A1A001A19DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B7378940180761A80076A88C /* cocos2d-ios.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2FEB74F194F6C9E00FC0574;
+			remoteInfo = cocos2dAndroid;
+		};
+		60A24AD41A195A1A001A19DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B7378940180761A80076A88C /* cocos2d-ios.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5BF3267A195F8D8800D9A51A;
+			remoteInfo = cocos2dJava;
+		};
+		60A24AD61A195A1A001A19DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B7378940180761A80076A88C /* cocos2d-ios.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7A4037A819E37038007B6E8F;
+			remoteInfo = "cocos2d-mac";
+		};
 		B737894A180761A90076A88C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B7378940180761A80076A88C /* cocos2d-ios.xcodeproj */;
@@ -76,6 +112,36 @@
 /* Begin PBXFileReference section */
 		602FA2C819E72E8400E03FC5 /* RegisterScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RegisterScene.h; path = Source/RegisterScene.h; sourceTree = "<group>"; };
 		602FA2C919E72E8400E03FC5 /* RegisterScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RegisterScene.m; path = Source/RegisterScene.m; sourceTree = "<group>"; };
+		604DFDD21A1ECBEF00A3A255 /* RedCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RedCard.h; path = Source/RedCard.h; sourceTree = "<group>"; };
+		604DFDD31A1ECBEF00A3A255 /* RedCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RedCard.m; path = Source/RedCard.m; sourceTree = "<group>"; };
+		604DFDD91A1ECC2E00A3A255 /* GreenCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GreenCard.h; path = Source/GreenCard.h; sourceTree = "<group>"; };
+		604DFDDA1A1ECC2E00A3A255 /* GreenCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GreenCard.m; path = Source/GreenCard.m; sourceTree = "<group>"; };
+		604DFDE81A1EDE8C00A3A255 /* WinnerScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WinnerScene.h; path = Source/WinnerScene.h; sourceTree = "<group>"; };
+		604DFDE91A1EDE8C00A3A255 /* WinnerScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WinnerScene.m; path = Source/WinnerScene.m; sourceTree = "<group>"; };
+		605CBDC519FAE6D900005D79 /* EachGroupAddMemberScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EachGroupAddMemberScene.h; path = Source/EachGroupAddMemberScene.h; sourceTree = "<group>"; };
+		605CBDC619FAE6D900005D79 /* EachGroupAddMemberScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EachGroupAddMemberScene.m; path = Source/EachGroupAddMemberScene.m; sourceTree = "<group>"; };
+		605CBDCC19FAF74B00005D79 /* AddGroupMemberListnode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddGroupMemberListnode.h; path = Source/AddGroupMemberListnode.h; sourceTree = "<group>"; };
+		605CBDCD19FAF74B00005D79 /* AddGroupMemberListnode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddGroupMemberListnode.m; path = Source/AddGroupMemberListnode.m; sourceTree = "<group>"; };
+		6077F75719F1B43C00C32CAE /* EachGroupScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EachGroupScene.h; path = Source/EachGroupScene.h; sourceTree = "<group>"; };
+		6077F75819F1B43C00C32CAE /* EachGroupScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EachGroupScene.m; path = Source/EachGroupScene.m; sourceTree = "<group>"; };
+		6077F75C19F1B7EB00C32CAE /* EachGroupListnode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EachGroupListnode.h; path = Source/EachGroupListnode.h; sourceTree = "<group>"; };
+		6077F75D19F1B7EB00C32CAE /* EachGroupListnode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EachGroupListnode.m; path = Source/EachGroupListnode.m; sourceTree = "<group>"; };
+		6077F75F19F1DC7200C32CAE /* LoginScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginScene.h; path = Source/LoginScene.h; sourceTree = "<group>"; };
+		6077F76019F1DC7200C32CAE /* LoginScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginScene.m; path = Source/LoginScene.m; sourceTree = "<group>"; };
+		60A24ACB1A195A19001A19DF /* SelectGameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SelectGameScene.h; path = Source/SelectGameScene.h; sourceTree = "<group>"; };
+		60A24ACC1A195A19001A19DF /* SelectGameScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SelectGameScene.m; path = Source/SelectGameScene.m; sourceTree = "<group>"; };
+		60A24AD81A195CEF001A19DF /* GameNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameNode.h; path = Source/GameNode.h; sourceTree = "<group>"; };
+		60A24AD91A195CEF001A19DF /* GameNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GameNode.m; path = Source/GameNode.m; sourceTree = "<group>"; };
+		60A24ADB1A195EF2001A19DF /* EachGameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EachGameScene.h; path = Source/EachGameScene.h; sourceTree = "<group>"; };
+		60A24ADC1A195EF2001A19DF /* EachGameScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EachGameScene.m; path = Source/EachGameScene.m; sourceTree = "<group>"; };
+		60A24ADE1A19651E001A19DF /* GameGroupScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameGroupScene.h; path = Source/GameGroupScene.h; sourceTree = "<group>"; };
+		60A24ADF1A19651E001A19DF /* GameGroupScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GameGroupScene.m; path = Source/GameGroupScene.m; sourceTree = "<group>"; };
+		60A24AE11A1965FF001A19DF /* GroupNodeForGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GroupNodeForGame.h; path = Source/GroupNodeForGame.h; sourceTree = "<group>"; };
+		60A24AE21A1965FF001A19DF /* GroupNodeForGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GroupNodeForGame.m; path = Source/GroupNodeForGame.m; sourceTree = "<group>"; };
+		60A24AE41A19702E001A19DF /* CurrentGameNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CurrentGameNode.h; path = Source/CurrentGameNode.h; sourceTree = "<group>"; };
+		60A24AE51A19702E001A19DF /* CurrentGameNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CurrentGameNode.m; path = Source/CurrentGameNode.m; sourceTree = "<group>"; };
+		60A24AE71A1981A3001A19DF /* CardNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CardNode.h; path = Source/CardNode.h; sourceTree = "<group>"; };
+		60A24AE81A1981A3001A19DF /* CardNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CardNode.m; path = Source/CardNode.m; sourceTree = "<group>"; };
 		60D9891019E74D83003D4056 /* AddFriendScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddFriendScene.h; path = Source/AddFriendScene.h; sourceTree = "<group>"; };
 		60D9891119E74D83003D4056 /* AddFriendScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddFriendScene.m; path = Source/AddFriendScene.m; sourceTree = "<group>"; };
 		60D9891419E7709D003D4056 /* CreateGroupScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CreateGroupScene.h; path = Source/CreateGroupScene.h; sourceTree = "<group>"; };
@@ -184,22 +250,52 @@
 			children = (
 				60F518B719E0633600B2536B /* AppDelegate.h */,
 				60F518B819E0633600B2536B /* AppDelegate.m */,
+				60F518BF19E0633600B2536B /* MainScene.h */,
+				60F518C019E0633600B2536B /* MainScene.m */,
+				6077F75F19F1DC7200C32CAE /* LoginScene.h */,
+				6077F76019F1DC7200C32CAE /* LoginScene.m */,
+				602FA2C819E72E8400E03FC5 /* RegisterScene.h */,
+				602FA2C919E72E8400E03FC5 /* RegisterScene.m */,
 				60F518B919E0633600B2536B /* FriendsScene.h */,
 				60F518BA19E0633600B2536B /* FriendsScene.m */,
 				60D9891019E74D83003D4056 /* AddFriendScene.h */,
 				60D9891119E74D83003D4056 /* AddFriendScene.m */,
-				60F518BB19E0633600B2536B /* GamesScene.h */,
-				60F518BC19E0633600B2536B /* GamesScene.m */,
 				60F518BD19E0633600B2536B /* GroupsScene.h */,
 				60F518BE19E0633600B2536B /* GroupsScene.m */,
 				60D9891419E7709D003D4056 /* CreateGroupScene.h */,
 				60D9891519E7709D003D4056 /* CreateGroupScene.m */,
-				60F518BF19E0633600B2536B /* MainScene.h */,
-				60F518C019E0633600B2536B /* MainScene.m */,
+				6077F75C19F1B7EB00C32CAE /* EachGroupListnode.h */,
+				6077F75D19F1B7EB00C32CAE /* EachGroupListnode.m */,
+				6077F75719F1B43C00C32CAE /* EachGroupScene.h */,
+				6077F75819F1B43C00C32CAE /* EachGroupScene.m */,
+				605CBDC519FAE6D900005D79 /* EachGroupAddMemberScene.h */,
+				605CBDC619FAE6D900005D79 /* EachGroupAddMemberScene.m */,
+				605CBDCC19FAF74B00005D79 /* AddGroupMemberListnode.h */,
+				605CBDCD19FAF74B00005D79 /* AddGroupMemberListnode.m */,
+				60F518BB19E0633600B2536B /* GamesScene.h */,
+				60F518BC19E0633600B2536B /* GamesScene.m */,
+				60A24AE41A19702E001A19DF /* CurrentGameNode.h */,
+				60A24AE51A19702E001A19DF /* CurrentGameNode.m */,
+				60A24ACB1A195A19001A19DF /* SelectGameScene.h */,
+				60A24ACC1A195A19001A19DF /* SelectGameScene.m */,
+				60A24AD81A195CEF001A19DF /* GameNode.h */,
+				60A24AD91A195CEF001A19DF /* GameNode.m */,
+				60A24ADE1A19651E001A19DF /* GameGroupScene.h */,
+				60A24ADF1A19651E001A19DF /* GameGroupScene.m */,
+				60A24AE11A1965FF001A19DF /* GroupNodeForGame.h */,
+				60A24AE21A1965FF001A19DF /* GroupNodeForGame.m */,
+				60A24ADB1A195EF2001A19DF /* EachGameScene.h */,
+				60A24ADC1A195EF2001A19DF /* EachGameScene.m */,
+				60A24AE71A1981A3001A19DF /* CardNode.h */,
+				60A24AE81A1981A3001A19DF /* CardNode.m */,
 				60F518C119E0633600B2536B /* SettingsScene.h */,
 				60F518C219E0633600B2536B /* SettingsScene.m */,
-				602FA2C819E72E8400E03FC5 /* RegisterScene.h */,
-				602FA2C919E72E8400E03FC5 /* RegisterScene.m */,
+				604DFDD21A1ECBEF00A3A255 /* RedCard.h */,
+				604DFDD31A1ECBEF00A3A255 /* RedCard.m */,
+				604DFDD91A1ECC2E00A3A255 /* GreenCard.h */,
+				604DFDDA1A1ECC2E00A3A255 /* GreenCard.m */,
+				604DFDE81A1EDE8C00A3A255 /* WinnerScene.h */,
+				604DFDE91A1EDE8C00A3A255 /* WinnerScene.m */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -208,6 +304,9 @@
 			isa = PBXGroup;
 			children = (
 				B737894B180761A90076A88C /* libcocos2d.a */,
+				60A24AD31A195A1A001A19DF /* libcocos2dAndroid.a */,
+				60A24AD51A195A1A001A19DF /* cocos2dJava.jar */,
+				60A24AD71A195A1A001A19DF /* libcocos2d-mac.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -372,6 +471,27 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		60A24AD31A195A1A001A19DF /* libcocos2dAndroid.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libcocos2dAndroid.a;
+			remoteRef = 60A24AD21A195A1A001A19DF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		60A24AD51A195A1A001A19DF /* cocos2dJava.jar */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.jar;
+			path = cocos2dJava.jar;
+			remoteRef = 60A24AD41A195A1A001A19DF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		60A24AD71A195A1A001A19DF /* libcocos2d-mac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libcocos2d-mac.a";
+			remoteRef = 60A24AD61A195A1A001A19DF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		B737894B180761A90076A88C /* libcocos2d.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -429,15 +549,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				60F518C319E0633600B2536B /* AppDelegate.m in Sources */,
+				6077F76119F1DC7200C32CAE /* LoginScene.m in Sources */,
+				604DFDDB1A1ECC2E00A3A255 /* GreenCard.m in Sources */,
+				60A24ACD1A195A19001A19DF /* SelectGameScene.m in Sources */,
+				60A24AE01A19651E001A19DF /* GameGroupScene.m in Sources */,
+				604DFDD41A1ECBEF00A3A255 /* RedCard.m in Sources */,
+				60A24ADD1A195EF2001A19DF /* EachGameScene.m in Sources */,
 				B73789871807631A0076A88C /* main.m in Sources */,
 				60D9891619E7709D003D4056 /* CreateGroupScene.m in Sources */,
+				605CBDC719FAE6D900005D79 /* EachGroupAddMemberScene.m in Sources */,
 				60F518C519E0633600B2536B /* GamesScene.m in Sources */,
+				60A24ADA1A195CEF001A19DF /* GameNode.m in Sources */,
 				602FA2CA19E72E8400E03FC5 /* RegisterScene.m in Sources */,
+				60A24AE61A19702E001A19DF /* CurrentGameNode.m in Sources */,
 				60F518C419E0633600B2536B /* FriendsScene.m in Sources */,
+				6077F75919F1B43C00C32CAE /* EachGroupScene.m in Sources */,
 				60F518C819E0633600B2536B /* SettingsScene.m in Sources */,
 				60F518C619E0633600B2536B /* GroupsScene.m in Sources */,
+				60A24AE31A1965FF001A19DF /* GroupNodeForGame.m in Sources */,
+				60A24AE91A1981A3001A19DF /* CardNode.m in Sources */,
+				605CBDCE19FAF74B00005D79 /* AddGroupMemberListnode.m in Sources */,
+				6077F75E19F1B7EB00C32CAE /* EachGroupListnode.m in Sources */,
 				60D9891219E74D83003D4056 /* AddFriendScene.m in Sources */,
 				60F518C719E0633600B2536B /* MainScene.m in Sources */,
+				604DFDEA1A1EDE8C00A3A255 /* WinnerScene.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -455,8 +590,15 @@
 		B77F1CDC17B978D8009739AE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -465,9 +607,14 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -476,15 +623,26 @@
 		B77F1CDD17B978D8009739AE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					NDEBUG,
 					"NS_BLOCK_ASSERTIONS=1",
 				);
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				SDKROOT = iphoneos;
@@ -496,7 +654,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -535,7 +692,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";

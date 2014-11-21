@@ -38,6 +38,9 @@
                   clientKey:@"J42I7tWLi0qq9pUFvA1lnJ1lepvHgpDiNTqlOI6L"];
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
     
+    // notification
+    //[self.navController pushViewController:[CCBReader loadAsScene:@"FriendsScene"] animated:YES];
+    
     // Configure Cocos2d with the options set in SpriteBuilder
     NSString* configPath = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"Published-iOS"]; // TODO: add support for Published-Android support
     configPath = [configPath stringByAppendingPathComponent:@"configCocos2d.plist"];
@@ -63,17 +66,21 @@
     return YES;
 }
 
+//- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
+//    if[[CCDirector sharedDirector] runningScene] == eachchatScene
+//        add redpoint to scene;
+//}
+
 - (CCScene*) startScene
 {
     PFUser *currentUser = [PFUser currentUser];
-    [PFUser logOut];
     
     if (currentUser) {
          //do stuff with the user
-        return [CCBReader loadAsScene:@"MainScene"];
+        return [CCBReader loadAsScene:@"FriendsScene"];
     } else {
          //show the signup or login screen
-        return [CCBReader loadAsScene:@"RegisterScene"];
+        return [CCBReader loadAsScene:@"LoginScene"];
     }
 }
 
