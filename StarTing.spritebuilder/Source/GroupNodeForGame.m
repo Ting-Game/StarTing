@@ -10,7 +10,7 @@
 #import <Parse/Parse.h>
 
 @implementation GroupNodeForGame{
-    CCTextField *groupName_TTF;
+    CCLabelTTF *groupName_TTF;
     NSArray *membersArray;
 }
 

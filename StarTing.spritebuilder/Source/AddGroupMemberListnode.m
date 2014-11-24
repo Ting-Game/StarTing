@@ -34,6 +34,7 @@
                                         NSString *errorString = [error userInfo][@"error"];
                                         NSLog(@"%@", errorString);
                                     }
+                                    [self.parent.parent.parent removeFromParent];
                                 }];
 }
 

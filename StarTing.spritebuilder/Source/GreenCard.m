@@ -9,8 +9,8 @@
 #import "GreenCard.h"
 
 @implementation GreenCard{
-    CCTextField *Keyword_TTF;
-    CCTextField *Detail_TTF;
+    CCLabelTTF *Keyword_TTF;
+    CCLabelTTF *Detail_TTF;
 }
 
 - (void)onEnter{

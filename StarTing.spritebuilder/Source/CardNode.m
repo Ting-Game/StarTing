@@ -9,7 +9,7 @@
 #import "CardNode.h"
 
 @implementation CardNode{
-    CCTextField *cardText_TTF;
+    CCLabelTTF *cardText_TTF;
 }
 
 - (void)onEnter{

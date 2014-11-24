@@ -12,7 +12,7 @@
 #import "WinnerScene.h"
 
 @implementation CurrentGameNode{
-    CCTextField *currentGameName_TTF;
+    CCLabelTTF *currentGameName_TTF;
 }
 
 - (void)onEnter{

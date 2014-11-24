@@ -10,8 +10,8 @@
 #import <Parse/Parse.h>
 
 @implementation RedCard{
-    CCTextField *Keyword_TTF;
-    CCTextField *Detail_TTF;
+    CCLabelTTF *Keyword_TTF;
+    CCLabelTTF *Detail_TTF;
 }
 
 - (void)onEnter{

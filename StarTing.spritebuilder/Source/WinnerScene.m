@@ -11,7 +11,7 @@
 #import "EachGameScene.h"
 
 @implementation WinnerScene{
-    CCTextField *winnername_TTF;
+    CCLabelTTF *winnername_TTF;
     CCButton *newRound_button;
     NSString *currentUsername;
 }
@@ -22,7 +22,7 @@
 
 - (void)onEnter{
     [super onEnter];
-    [self schedule:@selector(getGameStatus) interval:5.0f];
+    [self schedule:@selector(getGameStatus) interval:1.0f];
     
     PFUser *currentUser = [PFUser currentUser];
     currentUsername = currentUser[@"username"];
@@ -49,7 +49,7 @@
                                 block:^(PFObject *success, NSError *error) {
                                     if (!error) {
                                         NSNumber *started = success[@"started"];
-                                        if ([started doubleValue] == 1) {
+                                        if ([started doubleValue] != 0) {
                                             EachGameScene *eachGameScene = (EachGameScene*)[CCBReader load:@"EachGameScene"];
                                             eachGameScene.gameID = self.gameID;
                                             [self.parent addChild:eachGameScene];
@@ -81,10 +81,12 @@
                                         }
                                     }
                                 }];
-    EachGameScene *eachGameScene = (EachGameScene*)[CCBReader load:@"EachGameScene"];
-    eachGameScene.gameID = self.gameID;
-    [self.parent addChild:eachGameScene];
-    [self removeFromParent];
+//    [NSThread sleepForTimeInterval:2.0f];
+//
+//    EachGameScene *eachGameScene = (EachGameScene*)[CCBReader load:@"EachGameScene"];
+//    eachGameScene.gameID = self.gameID;
+//    [self.parent addChild:eachGameScene];
+//    [self removeFromParent];
 }
 
 @end
