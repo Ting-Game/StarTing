@@ -8,6 +8,7 @@
 
 #import "FriendsScene.h"
 #import <Parse/Parse.h>
+#import "FriendNode.h"
 
 @implementation FriendsScene{
     CCTextField *PopAddFriend_Field;
@@ -24,22 +25,18 @@
                                         if (success != NULL) {
                                             if (success.count > 0) {
                                                 nofriend_hint.string = @"";
-                                                float y = 35;
+                                                float y = 0.9;
                                                 for (int i=0; i < success.count; i++)
                                                 {
                                                     NSString *friendName = success[i];
                                                     
-                                                    CCLabelTTF *label = [CCLabelTTF node];
-                                                    //label.fontName = @"Sansation-BoldItalic.ttf";
-                                                    label.fontSize = 15.f;
-                                                    label.string = [NSString stringWithFormat:@"%@",friendName];
-                                                    label.anchorPoint = CGPointMake(0, 0);
-                                                    //label.positionType = CCPositionTypeNormalized;
-                                                    label.position = CGPointMake(120, y);
-                                                    label.color = [CCColor colorWithRed:0.f green:0.f blue:0.f];
-                                                    label.positionType = CCPositionTypeMake(CCPositionTypePoints.xUnit, CCPositionTypePoints.yUnit, CCPositionReferenceCornerTopLeft);
-                                                    [[friends_scroll contentNode] addChild:label];
-                                                    y+=label.contentSizeInPoints.height + 2;
+                                                    FriendNode *fn = (FriendNode*)[CCBReader load:@"FriendNode"];
+                                                    
+                                                    fn.friend_name = friendName;
+                                                    fn.positionType = CCPositionTypeNormalized;
+                                                    fn.position = CGPointMake(0.5, y);
+                                                    [[friends_scroll contentNode] addChild:fn];
+                                                    y -= 0.09;
                                                 }
                                             }
                                             else {

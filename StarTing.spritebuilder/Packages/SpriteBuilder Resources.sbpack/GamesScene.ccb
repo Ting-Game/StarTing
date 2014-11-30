@@ -277,8 +277,8 @@
 								<string>Position</string>
 								<key>value</key>
 								<array>
-									<real>11</real>
-									<real>9</real>
+									<real>6</real>
+									<real>5</real>
 									<integer>0</integer>
 									<integer>0</integer>
 									<integer>0</integer>
@@ -302,8 +302,8 @@
 								<string>ScaleLock</string>
 								<key>value</key>
 								<array>
-									<real>0.64331537485122681</real>
-									<real>0.64331537485122681</real>
+									<real>0.64300000667572021</real>
+									<real>0.64300000667572021</real>
 									<false/>
 									<integer>0</integer>
 								</array>
@@ -326,8 +326,8 @@
 								<string>Size</string>
 								<key>value</key>
 								<array>
-									<real>150</real>
-									<real>150</real>
+									<real>64</real>
+									<real>64</real>
 									<integer>0</integer>
 									<integer>0</integer>
 								</array>
@@ -372,7 +372,7 @@
 								<key>value</key>
 								<array>
 									<string></string>
-									<string>MainSceneAssets/friendIcon.png</string>
+									<string>MainSceneAssets/icon-ios7-contact-outline-128.png</string>
 								</array>
 							</dict>
 							<dict>
@@ -651,7 +651,7 @@
 								<key>type</key>
 								<string>FontTTF</string>
 								<key>value</key>
-								<string>Helvetica</string>
+								<string>fonts/Sansation-BoldItalic.ttf</string>
 							</dict>
 							<dict>
 								<key>name</key>
@@ -902,7 +902,7 @@
 								<string>Position</string>
 								<key>value</key>
 								<array>
-									<real>6</real>
+									<real>4</real>
 									<real>5</real>
 									<integer>0</integer>
 									<integer>0</integer>
@@ -927,8 +927,8 @@
 								<string>ScaleLock</string>
 								<key>value</key>
 								<array>
-									<real>0.44418421387672424</real>
-									<real>0.44418421387672424</real>
+									<real>0.64399999380111694</real>
+									<real>0.64399999380111694</real>
 									<false/>
 									<integer>0</integer>
 								</array>
@@ -951,8 +951,8 @@
 								<string>Size</string>
 								<key>value</key>
 								<array>
-									<real>150</real>
-									<real>150</real>
+									<real>64</real>
+									<real>64</real>
 									<integer>0</integer>
 									<integer>0</integer>
 								</array>
@@ -997,7 +997,7 @@
 								<key>value</key>
 								<array>
 									<string></string>
-									<string>MainSceneAssets/GroupIcon.png</string>
+									<string>MainSceneAssets/User_Group.png</string>
 								</array>
 							</dict>
 							<dict>
@@ -1276,7 +1276,7 @@
 								<key>type</key>
 								<string>FontTTF</string>
 								<key>value</key>
-								<string>Helvetica</string>
+								<string>fonts/Sansation-BoldItalic.ttf</string>
 							</dict>
 							<dict>
 								<key>name</key>
@@ -1528,7 +1528,7 @@
 								<key>value</key>
 								<array>
 									<real>1.9999998807907104</real>
-									<real>5.9999990463256836</real>
+									<real>5</real>
 									<integer>0</integer>
 									<integer>0</integer>
 									<integer>0</integer>
@@ -1552,8 +1552,8 @@
 								<string>ScaleLock</string>
 								<key>value</key>
 								<array>
-									<real>0.44705694913864136</real>
-									<real>0.40991812944412231</real>
+									<real>0.65600001811981201</real>
+									<real>0.65600001811981201</real>
 									<false/>
 									<integer>0</integer>
 								</array>
@@ -1576,8 +1576,8 @@
 								<string>Size</string>
 								<key>value</key>
 								<array>
-									<real>84</real>
-									<real>84</real>
+									<real>60</real>
+									<real>45</real>
 									<integer>0</integer>
 									<integer>0</integer>
 								</array>
@@ -1622,7 +1622,7 @@
 								<key>value</key>
 								<array>
 									<string></string>
-									<string>MainSceneAssets/GamesIcon.png</string>
+									<string>MainSceneAssets/video-game-controller-icon-background-1.png</string>
 								</array>
 							</dict>
 							<dict>
@@ -1820,6 +1820,8 @@
 								</array>
 							</dict>
 						</array>
+						<key>selected</key>
+						<true/>
 					</dict>
 					<dict>
 						<key>UUID</key>
@@ -1901,7 +1903,7 @@
 								<key>type</key>
 								<string>FontTTF</string>
 								<key>value</key>
-								<string>Helvetica</string>
+								<string>fonts/Sansation-BoldItalic.ttf</string>
 							</dict>
 							<dict>
 								<key>name</key>
@@ -2526,7 +2528,7 @@
 								<key>type</key>
 								<string>FontTTF</string>
 								<key>value</key>
-								<string>Helvetica</string>
+								<string>fonts/Sansation-BoldItalic.ttf</string>
 							</dict>
 							<dict>
 								<key>name</key>
@@ -3115,7 +3117,7 @@
 						<key>type</key>
 						<string>FontTTF</string>
 						<key>value</key>
-						<string>Helvetica</string>
+						<string>fonts/Sansation-BoldItalic.ttf</string>
 					</dict>
 					<dict>
 						<key>name</key>
@@ -3567,8 +3569,6 @@
 						</array>
 					</dict>
 				</array>
-				<key>selected</key>
-				<true/>
 			</dict>
 		</array>
 		<key>customClass</key>

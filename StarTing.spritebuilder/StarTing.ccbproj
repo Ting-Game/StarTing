@@ -184,11 +184,13 @@
 			<key>tabletScale</key>
 			<integer>1</integer>
 		</dict>
+		<key>fonts</key>
+		<dict/>
 	</dict>
 	<key>versionStr</key>
-	<string>revision : 87486f6b8d
+	<string>revision : 71571752ab
 sku : default
-version : 1.3.5
+version : 1.3.6
 </string>
 </dict>
 </plist>

@@ -317,7 +317,7 @@
 						<key>type</key>
 						<string>FontTTF</string>
 						<key>value</key>
-						<string>Helvetica</string>
+						<string>fonts/Sansation-BoldItalic.ttf</string>
 					</dict>
 					<dict>
 						<key>name</key>
@@ -456,6 +456,8 @@
 						</array>
 					</dict>
 				</array>
+				<key>selected</key>
+				<true/>
 			</dict>
 			<dict>
 				<key>UUID</key>
@@ -655,7 +657,7 @@
 						<key>type</key>
 						<string>FontTTF</string>
 						<key>value</key>
-						<string>Helvetica</string>
+						<string>fonts/Sansation-BoldItalic.ttf</string>
 					</dict>
 					<dict>
 						<key>name</key>
@@ -854,8 +856,6 @@
 				</array>
 			</dict>
 		</array>
-		<key>selected</key>
-		<true/>
 	</dict>
 	<key>notes</key>
 	<array/>

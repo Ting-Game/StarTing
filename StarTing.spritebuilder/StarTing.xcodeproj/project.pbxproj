@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		601460041A26648300E36C91 /* Sansation-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 60145FFB1A26648300E36C91 /* Sansation-BoldItalic.ttf */; };
+		601460051A26648300E36C91 /* Let's go Digital Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 60145FFC1A26648300E36C91 /* Let's go Digital Regular.ttf */; };
+		601460061A26648300E36C91 /* moonhouse.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 60145FFD1A26648300E36C91 /* moonhouse.ttf */; };
+		601460071A26648300E36C91 /* Playball.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 60145FFE1A26648300E36C91 /* Playball.ttf */; };
+		601460081A26648300E36C91 /* SpicyRice-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 60145FFF1A26648300E36C91 /* SpicyRice-Regular.ttf */; };
+		601460091A26648300E36C91 /* Pacifico.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 601460001A26648300E36C91 /* Pacifico.ttf */; };
+		6014600A1A26648300E36C91 /* Sansation-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 601460011A26648300E36C91 /* Sansation-LightItalic.ttf */; };
+		6014600B1A26648300E36C91 /* AlexBrush-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 601460021A26648300E36C91 /* AlexBrush-Regular.ttf */; };
+		6014600C1A26648300E36C91 /* Kalam-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 601460031A26648300E36C91 /* Kalam-Regular.ttf */; };
+		602CBAE81A2BC32400BA689C /* FriendNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 602CBAE71A2BC32400BA689C /* FriendNode.m */; };
 		602FA2CA19E72E8400E03FC5 /* RegisterScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 602FA2C919E72E8400E03FC5 /* RegisterScene.m */; };
 		604DFDD41A1ECBEF00A3A255 /* RedCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 604DFDD31A1ECBEF00A3A255 /* RedCard.m */; };
 		604DFDDB1A1ECC2E00A3A255 /* GreenCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 604DFDDA1A1ECC2E00A3A255 /* GreenCard.m */; };
@@ -29,7 +39,6 @@
 		60F518C419E0633600B2536B /* FriendsScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 60F518BA19E0633600B2536B /* FriendsScene.m */; };
 		60F518C519E0633600B2536B /* GamesScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 60F518BC19E0633600B2536B /* GamesScene.m */; };
 		60F518C619E0633600B2536B /* GroupsScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 60F518BE19E0633600B2536B /* GroupsScene.m */; };
-		60F518C719E0633600B2536B /* MainScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 60F518C019E0633600B2536B /* MainScene.m */; };
 		60F518C819E0633600B2536B /* SettingsScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 60F518C219E0633600B2536B /* SettingsScene.m */; };
 		60F518E319E0819A00B2536B /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77F1B3717B978D7009739AE /* AudioToolbox.framework */; };
 		60F518F219E0829100B2536B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77F1B3117B978D7009739AE /* QuartzCore.framework */; };
@@ -110,6 +119,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		60145FFB1A26648300E36C91 /* Sansation-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sansation-BoldItalic.ttf"; sourceTree = "<group>"; };
+		60145FFC1A26648300E36C91 /* Let's go Digital Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Let's go Digital Regular.ttf"; sourceTree = "<group>"; };
+		60145FFD1A26648300E36C91 /* moonhouse.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = moonhouse.ttf; sourceTree = "<group>"; };
+		60145FFE1A26648300E36C91 /* Playball.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Playball.ttf; sourceTree = "<group>"; };
+		60145FFF1A26648300E36C91 /* SpicyRice-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SpicyRice-Regular.ttf"; sourceTree = "<group>"; };
+		601460001A26648300E36C91 /* Pacifico.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Pacifico.ttf; sourceTree = "<group>"; };
+		601460011A26648300E36C91 /* Sansation-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sansation-LightItalic.ttf"; sourceTree = "<group>"; };
+		601460021A26648300E36C91 /* AlexBrush-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AlexBrush-Regular.ttf"; sourceTree = "<group>"; };
+		601460031A26648300E36C91 /* Kalam-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kalam-Regular.ttf"; sourceTree = "<group>"; };
+		602CBAE61A2BC32400BA689C /* FriendNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FriendNode.h; path = Source/FriendNode.h; sourceTree = "<group>"; };
+		602CBAE71A2BC32400BA689C /* FriendNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FriendNode.m; path = Source/FriendNode.m; sourceTree = "<group>"; };
 		602FA2C819E72E8400E03FC5 /* RegisterScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RegisterScene.h; path = Source/RegisterScene.h; sourceTree = "<group>"; };
 		602FA2C919E72E8400E03FC5 /* RegisterScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RegisterScene.m; path = Source/RegisterScene.m; sourceTree = "<group>"; };
 		604DFDD21A1ECBEF00A3A255 /* RedCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RedCard.h; path = Source/RedCard.h; sourceTree = "<group>"; };
@@ -154,8 +174,6 @@
 		60F518BC19E0633600B2536B /* GamesScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GamesScene.m; path = Source/GamesScene.m; sourceTree = "<group>"; };
 		60F518BD19E0633600B2536B /* GroupsScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GroupsScene.h; path = Source/GroupsScene.h; sourceTree = "<group>"; };
 		60F518BE19E0633600B2536B /* GroupsScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GroupsScene.m; path = Source/GroupsScene.m; sourceTree = "<group>"; };
-		60F518BF19E0633600B2536B /* MainScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainScene.h; path = Source/MainScene.h; sourceTree = "<group>"; };
-		60F518C019E0633600B2536B /* MainScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainScene.m; path = Source/MainScene.m; sourceTree = "<group>"; };
 		60F518C119E0633600B2536B /* SettingsScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SettingsScene.h; path = Source/SettingsScene.h; sourceTree = "<group>"; };
 		60F518C219E0633600B2536B /* SettingsScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SettingsScene.m; path = Source/SettingsScene.m; sourceTree = "<group>"; };
 		60F518C919E0804300B2536B /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "../Downloads/parse-library-1-2/Bolts.framework"; sourceTree = "<group>"; };
@@ -237,6 +255,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		60145FF61A26643F00E36C91 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				60145FFB1A26648300E36C91 /* Sansation-BoldItalic.ttf */,
+				60145FFC1A26648300E36C91 /* Let's go Digital Regular.ttf */,
+				60145FFD1A26648300E36C91 /* moonhouse.ttf */,
+				60145FFE1A26648300E36C91 /* Playball.ttf */,
+				60145FFF1A26648300E36C91 /* SpicyRice-Regular.ttf */,
+				601460001A26648300E36C91 /* Pacifico.ttf */,
+				601460011A26648300E36C91 /* Sansation-LightItalic.ttf */,
+				601460021A26648300E36C91 /* AlexBrush-Regular.ttf */,
+				601460031A26648300E36C91 /* Kalam-Regular.ttf */,
+			);
+			name = fonts;
+			sourceTree = "<group>";
+		};
 		9222E2B918734FF800A246C7 /* libs */ = {
 			isa = PBXGroup;
 			children = (
@@ -250,14 +284,14 @@
 			children = (
 				60F518B719E0633600B2536B /* AppDelegate.h */,
 				60F518B819E0633600B2536B /* AppDelegate.m */,
-				60F518BF19E0633600B2536B /* MainScene.h */,
-				60F518C019E0633600B2536B /* MainScene.m */,
 				6077F75F19F1DC7200C32CAE /* LoginScene.h */,
 				6077F76019F1DC7200C32CAE /* LoginScene.m */,
 				602FA2C819E72E8400E03FC5 /* RegisterScene.h */,
 				602FA2C919E72E8400E03FC5 /* RegisterScene.m */,
 				60F518B919E0633600B2536B /* FriendsScene.h */,
 				60F518BA19E0633600B2536B /* FriendsScene.m */,
+				602CBAE61A2BC32400BA689C /* FriendNode.h */,
+				602CBAE71A2BC32400BA689C /* FriendNode.m */,
 				60D9891019E74D83003D4056 /* AddFriendScene.h */,
 				60D9891119E74D83003D4056 /* AddFriendScene.m */,
 				60F518BD19E0633600B2536B /* GroupsScene.h */,
@@ -387,6 +421,7 @@
 		B77F1B4617B978D7009739AE /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				60145FF61A26643F00E36C91 /* fonts */,
 				B73789911807667A0076A88C /* Icons */,
 				B737893A180761570076A88C /* Published-iOS */,
 			);
@@ -506,20 +541,29 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6014600A1A26648300E36C91 /* Sansation-LightItalic.ttf in Resources */,
+				601460051A26648300E36C91 /* Let's go Digital Regular.ttf in Resources */,
 				B71F5919188484E7003F4D28 /* Settings.png in Resources */,
 				B7378978180762440076A88C /* Default@2x.png in Resources */,
 				B71F5914188484E7003F4D28 /* iPad@2x.png in Resources */,
+				6014600B1A26648300E36C91 /* AlexBrush-Regular.ttf in Resources */,
+				601460061A26648300E36C91 /* moonhouse.ttf in Resources */,
 				B71F5913188484E7003F4D28 /* iPad.png in Resources */,
 				B71F5912188484E7003F4D28 /* iPad-old@2x.png in Resources */,
 				B71F5916188484E7003F4D28 /* iPhone-old@2x.png in Resources */,
 				B737893B180761570076A88C /* Published-iOS in Resources */,
 				B71F591A188484E7003F4D28 /* Settings@2x.png in Resources */,
+				601460041A26648300E36C91 /* Sansation-BoldItalic.ttf in Resources */,
+				601460091A26648300E36C91 /* Pacifico.ttf in Resources */,
+				601460081A26648300E36C91 /* SpicyRice-Regular.ttf in Resources */,
 				B7378976180762440076A88C /* Default-Landscape~ipad.png in Resources */,
 				B71F5915188484E7003F4D28 /* iPhone-old.png in Resources */,
 				B71F5917188484E7003F4D28 /* iPhone.png in Resources */,
+				6014600C1A26648300E36C91 /* Kalam-Regular.ttf in Resources */,
 				B7378975180762440076A88C /* Default-568h@2x.png in Resources */,
 				B71F5918188484E7003F4D28 /* iPhone@2x.png in Resources */,
 				B7378977180762440076A88C /* Default.png in Resources */,
+				601460071A26648300E36C91 /* Playball.ttf in Resources */,
 				B71F5911188484E7003F4D28 /* iPad-old.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -551,6 +595,7 @@
 				60F518C319E0633600B2536B /* AppDelegate.m in Sources */,
 				6077F76119F1DC7200C32CAE /* LoginScene.m in Sources */,
 				604DFDDB1A1ECC2E00A3A255 /* GreenCard.m in Sources */,
+				602CBAE81A2BC32400BA689C /* FriendNode.m in Sources */,
 				60A24ACD1A195A19001A19DF /* SelectGameScene.m in Sources */,
 				60A24AE01A19651E001A19DF /* GameGroupScene.m in Sources */,
 				604DFDD41A1ECBEF00A3A255 /* RedCard.m in Sources */,
@@ -571,7 +616,6 @@
 				605CBDCE19FAF74B00005D79 /* AddGroupMemberListnode.m in Sources */,
 				6077F75E19F1B7EB00C32CAE /* EachGroupListnode.m in Sources */,
 				60D9891219E74D83003D4056 /* AddFriendScene.m in Sources */,
-				60F518C719E0633600B2536B /* MainScene.m in Sources */,
 				604DFDEA1A1EDE8C00A3A255 /* WinnerScene.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
