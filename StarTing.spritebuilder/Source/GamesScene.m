@@ -12,6 +12,12 @@
 
 @implementation GamesScene{
     NSString *each_object_groupName;
+    CCLabelTTF *nogame_hint;
+    CCNode *hand;
+}
+
+- (void)didLoadFromCCB{
+    hand.visible = NO;
 }
 
 - (void)onEnter{
@@ -23,6 +29,7 @@
                                     if (!error) {
                                         if (success != NULL) {
                                             if (success.count > 0) {
+                                                nogame_hint.string = @"";
                                                 for (int i = 0; i < success.count; i++) {
                                                     PFObject *each_object = success[i];
                                                     NSString *each_object_groupid = each_object[@"group"];
@@ -39,7 +46,7 @@
                                                                                         currentGameNode.groupName = each_object_groupName;
                                                                                         
                                                                                         currentGameNode.anchorPoint = CGPointMake(0, 0);
-                                                                                        currentGameNode.position = CGPointMake(0, 220 + i * (currentGameNode.contentSizeInPoints.height));
+                                                                                        currentGameNode.position = CGPointMake(0, 120 + i * 30);
                                                                                         currentGameNode.positionType = CCPositionTypeMake(CCPositionTypePoints.xUnit, CCPositionTypePoints.yUnit, CCPositionReferenceCornerTopLeft);
                                                                                         [self addChild:currentGameNode];
                                                                                     }
@@ -47,6 +54,8 @@
                                                 }
                                             }
                                             else {
+                                                hand.visible = YES;
+                                                nogame_hint.string = @"Please launch a game here";
                                             }
                                         }
                                     }

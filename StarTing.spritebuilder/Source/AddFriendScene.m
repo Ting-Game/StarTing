@@ -21,9 +21,11 @@
                        withParameters:@{@"friendUsername" : search_friend_name}
                                 block:^(NSArray *success, NSError *error) {
                                     if (!error) {
-                                        [self removeFromParent];
-                                        CCScene *FriendsScene = [CCBReader loadAsScene:@"FriendsScene"];
-                                        [[CCDirector sharedDirector] replaceScene:FriendsScene];
+                                        nouser_hint.string = @"Add friend successfully";
+//                                        [NSThread sleepForTimeInterval:3.f];
+//                                        [self removeFromParent];
+//                                        CCScene *FriendsScene = [CCBReader loadAsScene:@"FriendsScene"];
+//                                        [[CCDirector sharedDirector] replaceScene:FriendsScene];
                                     }else {
                                         NSString *errorString = [error userInfo][@"error"];
                                         nouser_hint.string = errorString;

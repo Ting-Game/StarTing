@@ -11,6 +11,7 @@
 
 @implementation CreateGroupScene{
     CCTextField *group_name_Field;
+    CCLabelTTF *creategroup_hint;
 }
 
 - (void)Create_Group_Button {
@@ -20,9 +21,13 @@
                        withParameters:@{@"groupName" : create_group_name}
                                 block:^(NSArray *success, NSError *error) {
                                     if (!error) {
-                                        [self removeFromParent];
-                                        CCScene *GroupsScene = [CCBReader loadAsScene:@"GroupsScene"];
-                                        [[CCDirector sharedDirector] replaceScene:GroupsScene];
+                                        creategroup_hint.string = @"Create group successfully";
+//                                        [self removeFromParent];
+//                                        CCScene *GroupsScene = [CCBReader loadAsScene:@"GroupsScene"];
+//                                        [[CCDirector sharedDirector] replaceScene:GroupsScene];
+                                    }else{
+                                        NSString *errorString = [error userInfo][@"error"];
+                                        creategroup_hint.string = errorString;
                                     }
                                 }];
 

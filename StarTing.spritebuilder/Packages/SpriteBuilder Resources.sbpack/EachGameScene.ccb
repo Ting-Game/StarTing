@@ -10,7 +10,7 @@
 		<false/>
 	</dict>
 	<key>UUID</key>
-	<integer>28</integer>
+	<integer>30</integer>
 	<key>centeredOrigin</key>
 	<false/>
 	<key>currentResolution</key>
@@ -787,8 +787,6 @@
 						</array>
 					</dict>
 				</array>
-				<key>selected</key>
-				<true/>
 			</dict>
 			<dict>
 				<key>UUID</key>
@@ -1119,7 +1117,7 @@
 						<string>Text</string>
 						<key>value</key>
 						<array>
-							<string>Select a red card to match:</string>
+							<string></string>
 							<false/>
 						</array>
 					</dict>
@@ -1339,7 +1337,7 @@
 						<string>Text</string>
 						<key>value</key>
 						<array>
-							<string>Please pick you favourite red card:</string>
+							<string></string>
 							<false/>
 						</array>
 					</dict>

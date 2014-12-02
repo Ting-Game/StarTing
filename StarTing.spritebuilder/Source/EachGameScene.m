@@ -54,6 +54,7 @@
                                         greenCardWord = greenCard_keyword;
                                         NSString *greenCard_detail = @"";
                                         if ([judger isEqualToString: currentUsername]) {
+                                            judger_redAppleHint_TTF.string = @"Waiting for players' red cards";
                                             // Get current green
                                             judger_redAppleHint_TTF.visible = YES;
                                             GreenCard *greencard = (GreenCard*)[CCBReader load:@"GreenCard"];
@@ -65,6 +66,7 @@
                                             [self addChild:greencard];
                                             
                                         } else {
+                                            redAppleHint_TTF.string = [NSString stringWithFormat:@"Select a red card to match: %@", greenCardWord];
                                             // Get current green
                                             redAppleHint_TTF.visible = YES;
                                             selected_redAppleHint_TTF.visible = YES;
@@ -87,7 +89,7 @@
                                                                                     // Display my red cards
                                                                                     RedCard *redcard = (RedCard*)[CCBReader load:@"RedCard"];
                                                                                     redcard.keyword = eachRed[@"Keyword"];
-                                                                                    redcard.detail = @"";
+                                                                                    redcard.detail = eachRed[@"detail"];
                                                                                     redcard.RedNum = eachRed[@"cardNumber"];
                                                                                     redcard.gameID = self.gameID;
                                                                                     redcard.positionType = CCPositionTypeNormalized;
@@ -122,12 +124,19 @@
                                         NSString *judger = success[@"judger"];
                                         
                                         if ([judger isEqualToString: currentUsername]) {
-                                            judger_redAppleHint_TTF.string;
+                                            
                                             // Get player's red card
                                             [PFCloud callFunctionInBackground:@"getSelectedReds"
                                                                withParameters:@{@"gameID" : self.gameID}
                                                                         block:^(NSArray *success, NSError *error) {
-                                                                            if (!error) {
+                                                                            bool wait = YES;
+                                                                            for (PFObject *eachRed in success) {
+                                                                                if (eachRed[@"selectedCard"] != NULL) {
+                                                                                    wait = NO;
+                                                                                }
+                                                                            }
+                                                                            if (wait == NO) {
+                                                                                judger_redAppleHint_TTF.string = [NSString stringWithFormat:@"Select best match card for: %@", greenCardWord];
                                                                                 CGFloat x = 0.2;
                                                                                 int tem_currentNum = 0;
                                                                                 for (PFObject *eachRed in success) {
@@ -143,11 +152,11 @@
                                                                                             // Display my red cards
                                                                                             RedCard *redcard = (RedCard*)[CCBReader load:@"RedCard"];
                                                                                             redcard.keyword = eachRed[@"selectedCard"][@"Keyword"];
-                                                                                            redcard.detail = @"";
+                                                                                            redcard.detail = eachRed[@"selectedCard"][@"detail"];
                                                                                             redcard.RedNum = eachRed[@"selectedCard"][@"cardNumber"];
                                                                                             redcard.gameID = self.gameID;
                                                                                             redcard.positionType = CCPositionTypeNormalized;
-                                                                                            redcard.position = CGPointMake(x, 0.2);
+                                                                                            redcard.position = CGPointMake(x, 0.39);
                                                                                             x += 0.3;
                                                                                             redcard.scale = 0.6;
                                                                                             [redNode addChild:redcard];
@@ -155,8 +164,12 @@
                                                                                     }
                                                                                 }
                                                                             }
+                                                                            else{
+                                                                                judger_redAppleHint_TTF.string = @"Waiting for players' red cards";
+                                                                            }
                                                                         }];
                                         } else {
+                                            
                                             // Get all red cards
                                             [PFCloud callFunctionInBackground:@"getSelectedReds"
                                                                withParameters:@{@"gameID" : self.gameID}
@@ -177,7 +190,7 @@
                                                                                     // Display my red cards
                                                                                     RedCard *redcard = (RedCard*)[CCBReader load:@"RedCard"];
                                                                                     redcard.keyword = eachRed[@"selectedCard"][@"Keyword"];
-                                                                                    redcard.detail = @"";
+                                                                                    redcard.detail = eachRed[@"selectedCard"][@"detail"];
                                                                                     redcard.RedNum = eachRed[@"selectedCard"][@"cardNumber"];
                                                                                     redcard.gameID = self.gameID;
                                                                                     redcard.positionType = CCPositionTypeNormalized;

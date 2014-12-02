@@ -13,10 +13,12 @@
 @implementation GroupsScene{
     CCLabelTTF *nogroups_hint;
     CCScrollView *groups_scroll;
+    CCNode *hand;
     NSMutableArray *grouplist;
 }
 
 - (void)didLoadFromCCB {
+    hand.visible = NO;
     // pull friends list from Parse
     [PFCloud callFunctionInBackground:@"getGroups"
                        withParameters:@{}
@@ -54,7 +56,8 @@
                                                 }
                                             }
                                             else {
-                                                nogroups_hint.string = @"Please create group";
+                                                hand.visible = YES;
+                                                nogroups_hint.string = @"Please create group here";
                                             }
                                         }
                                     }

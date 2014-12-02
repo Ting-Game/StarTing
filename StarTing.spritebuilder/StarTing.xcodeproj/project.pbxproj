@@ -17,6 +17,8 @@
 		6014600B1A26648300E36C91 /* AlexBrush-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 601460021A26648300E36C91 /* AlexBrush-Regular.ttf */; };
 		6014600C1A26648300E36C91 /* Kalam-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 601460031A26648300E36C91 /* Kalam-Regular.ttf */; };
 		602CBAE81A2BC32400BA689C /* FriendNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 602CBAE71A2BC32400BA689C /* FriendNode.m */; };
+		602CBAEF1A2BEFCF00BA689C /* MyselfMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 602CBAEE1A2BEFCF00BA689C /* MyselfMessage.m */; };
+		602CBAF21A2BEFF900BA689C /* OtherMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 602CBAF11A2BEFF900BA689C /* OtherMessage.m */; };
 		602FA2CA19E72E8400E03FC5 /* RegisterScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 602FA2C919E72E8400E03FC5 /* RegisterScene.m */; };
 		604DFDD41A1ECBEF00A3A255 /* RedCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 604DFDD31A1ECBEF00A3A255 /* RedCard.m */; };
 		604DFDDB1A1ECC2E00A3A255 /* GreenCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 604DFDDA1A1ECC2E00A3A255 /* GreenCard.m */; };
@@ -26,6 +28,7 @@
 		6077F75919F1B43C00C32CAE /* EachGroupScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 6077F75819F1B43C00C32CAE /* EachGroupScene.m */; };
 		6077F75E19F1B7EB00C32CAE /* EachGroupListnode.m in Sources */ = {isa = PBXBuildFile; fileRef = 6077F75D19F1B7EB00C32CAE /* EachGroupListnode.m */; };
 		6077F76119F1DC7200C32CAE /* LoginScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 6077F76019F1DC7200C32CAE /* LoginScene.m */; };
+		6089D7A61A2D758E00A80E79 /* ZoomRed.m in Sources */ = {isa = PBXBuildFile; fileRef = 6089D7A51A2D758E00A80E79 /* ZoomRed.m */; };
 		60A24ACD1A195A19001A19DF /* SelectGameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 60A24ACC1A195A19001A19DF /* SelectGameScene.m */; };
 		60A24ADA1A195CEF001A19DF /* GameNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 60A24AD91A195CEF001A19DF /* GameNode.m */; };
 		60A24ADD1A195EF2001A19DF /* EachGameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 60A24ADC1A195EF2001A19DF /* EachGameScene.m */; };
@@ -53,6 +56,7 @@
 		60F518FD19E0840E00B2536B /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60F518D519E0808F00B2536B /* Social.framework */; };
 		60F518FF19E0843100B2536B /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60F518CF19E0808F00B2536B /* Accounts.framework */; };
 		60F5190019E0847F00B2536B /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60F518C919E0804300B2536B /* Bolts.framework */; };
+		60F7D6C61A2D4A1F00E349FC /* ShowMembersScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 60F7D6C51A2D4A1F00E349FC /* ShowMembersScene.m */; };
 		8392007A18EE8E3300B6C429 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8392007918EE8E3300B6C429 /* GLKit.framework */; };
 		B71F5911188484E7003F4D28 /* iPad-old.png in Resources */ = {isa = PBXBuildFile; fileRef = B71F5907188484E7003F4D28 /* iPad-old.png */; };
 		B71F5912188484E7003F4D28 /* iPad-old@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B71F5908188484E7003F4D28 /* iPad-old@2x.png */; };
@@ -130,6 +134,10 @@
 		601460031A26648300E36C91 /* Kalam-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kalam-Regular.ttf"; sourceTree = "<group>"; };
 		602CBAE61A2BC32400BA689C /* FriendNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FriendNode.h; path = Source/FriendNode.h; sourceTree = "<group>"; };
 		602CBAE71A2BC32400BA689C /* FriendNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FriendNode.m; path = Source/FriendNode.m; sourceTree = "<group>"; };
+		602CBAED1A2BEFCF00BA689C /* MyselfMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyselfMessage.h; path = Source/MyselfMessage.h; sourceTree = "<group>"; };
+		602CBAEE1A2BEFCF00BA689C /* MyselfMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyselfMessage.m; path = Source/MyselfMessage.m; sourceTree = "<group>"; };
+		602CBAF01A2BEFF900BA689C /* OtherMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OtherMessage.h; path = Source/OtherMessage.h; sourceTree = "<group>"; };
+		602CBAF11A2BEFF900BA689C /* OtherMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OtherMessage.m; path = Source/OtherMessage.m; sourceTree = "<group>"; };
 		602FA2C819E72E8400E03FC5 /* RegisterScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RegisterScene.h; path = Source/RegisterScene.h; sourceTree = "<group>"; };
 		602FA2C919E72E8400E03FC5 /* RegisterScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RegisterScene.m; path = Source/RegisterScene.m; sourceTree = "<group>"; };
 		604DFDD21A1ECBEF00A3A255 /* RedCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RedCard.h; path = Source/RedCard.h; sourceTree = "<group>"; };
@@ -148,6 +156,8 @@
 		6077F75D19F1B7EB00C32CAE /* EachGroupListnode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EachGroupListnode.m; path = Source/EachGroupListnode.m; sourceTree = "<group>"; };
 		6077F75F19F1DC7200C32CAE /* LoginScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginScene.h; path = Source/LoginScene.h; sourceTree = "<group>"; };
 		6077F76019F1DC7200C32CAE /* LoginScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginScene.m; path = Source/LoginScene.m; sourceTree = "<group>"; };
+		6089D7A41A2D758E00A80E79 /* ZoomRed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZoomRed.h; path = Source/ZoomRed.h; sourceTree = "<group>"; };
+		6089D7A51A2D758E00A80E79 /* ZoomRed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZoomRed.m; path = Source/ZoomRed.m; sourceTree = "<group>"; };
 		60A24ACB1A195A19001A19DF /* SelectGameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SelectGameScene.h; path = Source/SelectGameScene.h; sourceTree = "<group>"; };
 		60A24ACC1A195A19001A19DF /* SelectGameScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SelectGameScene.m; path = Source/SelectGameScene.m; sourceTree = "<group>"; };
 		60A24AD81A195CEF001A19DF /* GameNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameNode.h; path = Source/GameNode.h; sourceTree = "<group>"; };
@@ -190,6 +200,8 @@
 		60F518E119E080AB00B2536B /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		60F518ED19E081D400B2536B /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		60F518FB19E0838300B2536B /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
+		60F7D6C41A2D4A1F00E349FC /* ShowMembersScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShowMembersScene.h; path = Source/ShowMembersScene.h; sourceTree = "<group>"; };
+		60F7D6C51A2D4A1F00E349FC /* ShowMembersScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ShowMembersScene.m; path = Source/ShowMembersScene.m; sourceTree = "<group>"; };
 		8392007918EE8E3300B6C429 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
 		B71F5907188484E7003F4D28 /* iPad-old.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iPad-old.png"; path = "Icons/iPad-old.png"; sourceTree = "<group>"; };
 		B71F5908188484E7003F4D28 /* iPad-old@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iPad-old@2x.png"; path = "Icons/iPad-old@2x.png"; sourceTree = "<group>"; };
@@ -302,8 +314,14 @@
 				6077F75D19F1B7EB00C32CAE /* EachGroupListnode.m */,
 				6077F75719F1B43C00C32CAE /* EachGroupScene.h */,
 				6077F75819F1B43C00C32CAE /* EachGroupScene.m */,
+				602CBAED1A2BEFCF00BA689C /* MyselfMessage.h */,
+				602CBAEE1A2BEFCF00BA689C /* MyselfMessage.m */,
+				602CBAF01A2BEFF900BA689C /* OtherMessage.h */,
+				602CBAF11A2BEFF900BA689C /* OtherMessage.m */,
 				605CBDC519FAE6D900005D79 /* EachGroupAddMemberScene.h */,
 				605CBDC619FAE6D900005D79 /* EachGroupAddMemberScene.m */,
+				60F7D6C41A2D4A1F00E349FC /* ShowMembersScene.h */,
+				60F7D6C51A2D4A1F00E349FC /* ShowMembersScene.m */,
 				605CBDCC19FAF74B00005D79 /* AddGroupMemberListnode.h */,
 				605CBDCD19FAF74B00005D79 /* AddGroupMemberListnode.m */,
 				60F518BB19E0633600B2536B /* GamesScene.h */,
@@ -326,6 +344,8 @@
 				60F518C219E0633600B2536B /* SettingsScene.m */,
 				604DFDD21A1ECBEF00A3A255 /* RedCard.h */,
 				604DFDD31A1ECBEF00A3A255 /* RedCard.m */,
+				6089D7A41A2D758E00A80E79 /* ZoomRed.h */,
+				6089D7A51A2D758E00A80E79 /* ZoomRed.m */,
 				604DFDD91A1ECC2E00A3A255 /* GreenCard.h */,
 				604DFDDA1A1ECC2E00A3A255 /* GreenCard.m */,
 				604DFDE81A1EDE8C00A3A255 /* WinnerScene.h */,
@@ -601,12 +621,14 @@
 				604DFDD41A1ECBEF00A3A255 /* RedCard.m in Sources */,
 				60A24ADD1A195EF2001A19DF /* EachGameScene.m in Sources */,
 				B73789871807631A0076A88C /* main.m in Sources */,
+				602CBAEF1A2BEFCF00BA689C /* MyselfMessage.m in Sources */,
 				60D9891619E7709D003D4056 /* CreateGroupScene.m in Sources */,
 				605CBDC719FAE6D900005D79 /* EachGroupAddMemberScene.m in Sources */,
 				60F518C519E0633600B2536B /* GamesScene.m in Sources */,
 				60A24ADA1A195CEF001A19DF /* GameNode.m in Sources */,
 				602FA2CA19E72E8400E03FC5 /* RegisterScene.m in Sources */,
 				60A24AE61A19702E001A19DF /* CurrentGameNode.m in Sources */,
+				602CBAF21A2BEFF900BA689C /* OtherMessage.m in Sources */,
 				60F518C419E0633600B2536B /* FriendsScene.m in Sources */,
 				6077F75919F1B43C00C32CAE /* EachGroupScene.m in Sources */,
 				60F518C819E0633600B2536B /* SettingsScene.m in Sources */,
@@ -615,6 +637,8 @@
 				60A24AE91A1981A3001A19DF /* CardNode.m in Sources */,
 				605CBDCE19FAF74B00005D79 /* AddGroupMemberListnode.m in Sources */,
 				6077F75E19F1B7EB00C32CAE /* EachGroupListnode.m in Sources */,
+				6089D7A61A2D758E00A80E79 /* ZoomRed.m in Sources */,
+				60F7D6C61A2D4A1F00E349FC /* ShowMembersScene.m in Sources */,
 				60D9891219E74D83003D4056 /* AddFriendScene.m in Sources */,
 				604DFDEA1A1EDE8C00A3A255 /* WinnerScene.m in Sources */,
 			);

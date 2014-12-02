@@ -14,9 +14,11 @@
     CCTextField *PopAddFriend_Field;
     CCScrollView *friends_scroll;
     CCLabelTTF *nofriend_hint;
+    CCNode *hand;
 }
 
 - (void)didLoadFromCCB {
+    hand.visible = NO;
     // pull friends list from Parse
     [PFCloud callFunctionInBackground:@"getFriends"
                        withParameters:@{}
@@ -36,11 +38,12 @@
                                                     fn.positionType = CCPositionTypeNormalized;
                                                     fn.position = CGPointMake(0.5, y);
                                                     [[friends_scroll contentNode] addChild:fn];
-                                                    y -= 0.09;
+                                                    y -= 0.092;
                                                 }
                                             }
                                             else {
-                                                nofriend_hint.string = @"Please add friends";
+                                                hand.visible = YES;
+                                                nofriend_hint.string = @"Please add friends here";
                                             }
                                         }
                                     }

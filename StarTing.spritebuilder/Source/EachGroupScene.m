@@ -9,6 +9,9 @@
 #import "EachGroupScene.h"
 #import <Parse/Parse.h>
 #import "EachGroupAddMemberScene.h"
+#import "ShowMembersScene.h"
+#import "MyselfMessage.h"
+#import "OtherMessage.h"
 
 @implementation EachGroupScene{
     CCLabelTTF *Each_Group_Name_TTF;
@@ -24,34 +27,6 @@
     [self retrieveMessages];
     [self schedule:@selector(retrieveMessages) interval:5.0f];
     currentMessages = 0;
-//    [PFCloud callFunctionInBackground:@"getGroup"
-//                       withParameters:@{@"groupID" : self.Group_Id}
-//                                block:^(PFObject *success, NSError *error) {
-//                                    if (!error) {
-//                                        nogroupmember_hint.string = @"";
-//                                        NSArray *groupmember_array = success[@"members"];
-//                                        if (groupmember_array.count > 0) {
-//                                            for (int i = 0; i < groupmember_array.count; i++) {
-//                                                CCLabelTTF *label = [CCLabelTTF node];
-//                                                //label.fontName = @"Sansation-BoldItalic.ttf";
-//                                                label.fontSize = 15.f;
-//                                                label.string = [NSString stringWithFormat:@"%@",groupmember_array[i]];
-//                                                label.anchorPoint = CGPointMake(0, 0);
-//                                                //label.positionType = CCPositionTypeNormalized;
-//                                                label.position = CGPointMake(120, 100 + i * 25);
-//                                                label.color = [CCColor colorWithRed:0.f green:0.f blue:0.f];
-//                                                label.positionType = CCPositionTypeMake(CCPositionTypePoints.xUnit, CCPositionTypePoints.yUnit, CCPositionReferenceCornerTopLeft);
-//                                                [self addChild:label];
-//                                            }
-//                                        }
-//                                        else {
-//                                            nogroupmember_hint.string = @"Please add group member";
-//                                        }
-//                                    }
-//                                    else {
-//
-//                                    }
-//                                }];
 }
 
 - (void)Backto_GroupsScene_Button{
@@ -64,6 +39,13 @@
     eachGroupAddMemberScene.Group_Id = self.Group_Id;
     eachGroupAddMemberScene.Display_Group_Name = self.Display_Group_Name;
     [self addChild:eachGroupAddMemberScene];
+}
+
+- (void)showMembers_button{
+    ShowMembersScene *showMembersScene = (ShowMembersScene*)[CCBReader load:@"ShowMembersScene"];
+    showMembersScene.Group_Id = self.Group_Id;
+    showMembersScene.Display_Group_Name = self.Display_Group_Name;
+    [self addChild:showMembersScene];
 }
 
 - (void)quitgroup_Button{
@@ -101,30 +83,32 @@
     [PFCloud callFunctionInBackground:@"getChatInfo"
                        withParameters:@{@"groupID" : self.Group_Id}
                                 block:^(NSArray *success, NSError *error) {
+                                    NSLog(@"%@", success);
                                     if (!error) {
-                                        for (int i = currentMessages; i < success.count; i++) {
-                                            if ([success[i][@"user"] isEqualToString: currentUser[@"username"]]) {
-                                                CCLabelTTF *label = [CCLabelTTF node];
-                                                label.fontSize = 15.f;
-                                                label.string = [NSString stringWithFormat:@"%@",success[i][@"chatInfo"]];
-                                                label.anchorPoint = CGPointMake(0, 0);
-                                                //label.positionType = CCPositionTypeNormalized;
-                                                label.position = CGPointMake(220, currentMessages * 25);
-                                                label.color = [CCColor colorWithRed:0.f green:0.f blue:0.f];
-                                                label.positionType = CCPositionTypeMake(CCPositionTypePoints.xUnit, CCPositionTypePoints.yUnit, CCPositionReferenceCornerTopLeft);
-                                                [[messages_scroll contentNode] addChild:label];
-                                            } else {
-                                                CCLabelTTF *label = [CCLabelTTF node];
-                                                label.fontSize = 15.f;
-                                                label.string = [NSString stringWithFormat:@"%@",success[i][@"chatInfo"]];
-                                                label.anchorPoint = CGPointMake(0, 0);
-                                                //label.positionType = CCPositionTypeNormalized;
-                                                label.position = CGPointMake(40, currentMessages * 25);
-                                                label.color = [CCColor colorWithRed:0.f green:0.f blue:0.f];
-                                                label.positionType = CCPositionTypeMake(CCPositionTypePoints.xUnit, CCPositionTypePoints.yUnit, CCPositionReferenceCornerTopLeft);
-                                                [[messages_scroll contentNode] addChild:label];
+                                        if(currentMessages < success.count)
+                                        {
+                                            [[messages_scroll contentNode] removeAllChildren];
+                                            for (int i = 0; i < success.count; i++) {
+                                                if ([success[i][@"user"] isEqualToString: currentUser[@"username"]]) {
+                                                    
+                                                    MyselfMessage *mm = (MyselfMessage*) [CCBReader load:@"MyselfMessage"];
+                                                    mm.message = success[i][@"chatInfo"];
+                                                    mm.owner = success[i][@"user"];
+                                                    mm.positionType = CCPositionTypeNormalized;
+                                                    mm.position = CGPointMake(0.68, i * 0.08);
+                                                    [[messages_scroll contentNode] addChild:mm];
+                                                } else {
+                                                    OtherMessage *om = (OtherMessage*) [CCBReader load:@"OtherMessage"];
+                                                    om.message = success[i][@"chatInfo"];
+                                                    om.owner = success[i][@"user"];
+                                                    om.positionType = CCPositionTypeNormalized;
+                                                    om.position = CGPointMake(0.3, i * 0.08);
+                                                    [[messages_scroll contentNode] addChild:om];
+                                                }
+                                                while (currentMessages < success.count) {
+                                                    currentMessages++;
+                                                }
                                             }
-                                            currentMessages++;
                                         }
                                     }
                                     else {
