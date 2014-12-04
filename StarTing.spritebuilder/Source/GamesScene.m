@@ -46,7 +46,7 @@
                                                                                         currentGameNode.groupName = each_object_groupName;
                                                                                         
                                                                                         currentGameNode.anchorPoint = CGPointMake(0, 0);
-                                                                                        currentGameNode.position = CGPointMake(0, 120 + i * 30);
+                                                                                        currentGameNode.position = CGPointMake(0, 120 + i * 58);
                                                                                         currentGameNode.positionType = CCPositionTypeMake(CCPositionTypePoints.xUnit, CCPositionTypePoints.yUnit, CCPositionReferenceCornerTopLeft);
                                                                                         [self addChild:currentGameNode];
                                                                                     }

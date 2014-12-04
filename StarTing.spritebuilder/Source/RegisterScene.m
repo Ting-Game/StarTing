@@ -22,7 +22,7 @@
     NSString *Password = Password_Field.string;
     NSString *PhoneNumber = Phone_Field.string;
     NSString *Email = Email_Field.string;
-
+    
     // Send user name and password to Parse
     PFUser *user = [PFUser user];
     user.username = UserName;

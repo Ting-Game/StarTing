@@ -31,7 +31,7 @@
                                                     groupNodeForGame.ListNode_Groupid= each_object_groupid;
 
                                                     groupNodeForGame.anchorPoint = CGPointMake(0, 0);
-                                                    groupNodeForGame.position = CGPointMake(0, 220 + i * (groupNodeForGame.contentSizeInPoints.height));
+                                                    groupNodeForGame.position = CGPointMake(0, 180 + i * 58);
                                                     groupNodeForGame.positionType = CCPositionTypeMake(CCPositionTypePoints.xUnit, CCPositionTypePoints.yUnit, CCPositionReferenceCornerTopLeft);
                                                     [self addChild:groupNodeForGame];
                                                     
